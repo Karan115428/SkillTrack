@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillTrack | Assessment</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">S</span> SkillTrack</a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a class="active" href="roles.html">Explore roles</a><a href="profile.html">My profile</a></nav><a class="avatar" href="profile.html">KD</a></header>
+  <main class="container narrow-container">
+    <a class="back-link" href="roles.html">← Back to roles</a>
+    <section class="assessment-header"><p class="eyebrow">PRACTICE ASSESSMENT</p><h1 id="assessmentTitle">Frontend Developer</h1><p class="subtext">A short demo quiz to help you practice. Choose one answer for each question.</p></section>
+    <div class="progress-wrap"><div class="progress-label"><span id="questionLabel">Question 1 of 3</span><span id="progressPercent">33%</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div></div>
+    <form id="assessmentForm" class="panel quiz-panel">
+      <div id="questionArea"></div>
+      <div class="quiz-actions"><button type="button" id="prevQuestion" class="btn btn-outline" disabled>Previous</button><button type="button" id="nextQuestion" class="btn btn-primary">Next question →</button><button type="submit" id="submitAssessment" class="btn btn-primary" hidden>Submit assessment</button></div>
+      <p class="form-message" id="quizMessage" aria-live="polite"></p>
+    </form>
+    <section id="resultPanel" class="panel result-panel" hidden></section>
+    <footer class="footer">Demo only: questions and recommendations are sample content, not a formal certification.</footer>
+  </main>
+</body>
+</html>

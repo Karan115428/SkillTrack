@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillTrack | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark">S</span> SkillTrack</a>
+      <div class="intro-copy">
+        <p class="eyebrow">YOUR SKILLS. YOUR NEXT STEP.</p>
+        <h1>Turn your skills into a clear career path.</h1>
+        <p>Assess what you know, discover what to improve, and build a learning plan that moves you forward.</p>
+        <div class="mini-stats">
+          <div><strong>01</strong><span>Choose a role</span></div>
+          <div><strong>02</strong><span>Take an assessment</span></div>
+          <div><strong>03</strong><span>Get recommendations</span></div>
+        </div>
+      </div>
+      <p class="muted-light">A student project built to make skill development more focused.</p>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="mobile-brand"><a class="brand" href="index.html"><span class="brand-mark">S</span> SkillTrack</a></div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Sign in to your account</h2>
+        <p class="subtext">Continue your learning journey.</p>
+        <form id="loginForm">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter any password" minlength="4" required>
+          <div class="form-row"><label class="check-label"><input type="checkbox" id="remember"> Remember me</label><span class="small-note">Demo login</span></div>
+          <button class="btn btn-primary btn-full" type="submit">Sign in <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="loginMessage" aria-live="polite"></p>
+        </form>
+        <p class="auth-foot">New to SkillTrack? <a href="profile.html">Create a demo profile</a></p>
+        <p class="demo-note">Starter version: this form is for front-end practice only. It does not securely authenticate users.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

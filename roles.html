@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillTrack | Explore Roles</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">S</span> SkillTrack</a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a class="active" href="roles.html">Explore roles</a><a href="profile.html">My profile</a></nav><a class="avatar" href="profile.html">KD</a></header>
+  <main class="container">
+    <section class="page-heading"><p class="eyebrow">CAREER PATHS</p><h1>What do you want to become?</h1><p class="subtext">Select a role to explore its key skills and start a sample assessment.</p></section>
+    <div class="toolbar"><label class="search-box"><span>⌕</span><input id="roleSearch" type="search" placeholder="Search roles or skills..." aria-label="Search roles or skills"></label><span class="results-count" id="roleCount">4 roles</span></div>
+    <section class="role-grid" id="roleGrid">
+      <article class="role-card" data-role="frontend developer react html css javascript ui"><div class="role-top"><span class="role-icon icon-violet">◫</span><span class="level">Beginner friendly</span></div><h2>Frontend Developer</h2><p>Build the interfaces people use every day.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="role-bottom"><span>3 core skills</span><a class="btn btn-outline" href="assessment.html?role=Frontend%20Developer">Assess skills →</a></div></article>
+      <article class="role-card" data-role="backend developer node express api database javascript"><div class="role-top"><span class="role-icon icon-green">{ }</span><span class="level">Intermediate</span></div><h2>Backend Developer</h2><p>Build APIs, business logic, and server-side systems.</p><div class="skill-tags"><span>Node.js</span><span>APIs</span><span>Databases</span></div><div class="role-bottom"><span>3 core skills</span><a class="btn btn-outline" href="assessment.html?role=Backend%20Developer">Assess skills →</a></div></article>
+      <article class="role-card" data-role="full stack developer mern react node mongodb html css"><div class="role-top"><span class="role-icon icon-orange">⌘</span><span class="level">Career path</span></div><h2>Full Stack Developer</h2><p>Connect polished frontends with working backends.</p><div class="skill-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div><div class="role-bottom"><span>3 core skills</span><a class="btn btn-outline" href="assessment.html?role=Full%20Stack%20Developer">Assess skills →</a></div></article>
+      <article class="role-card" data-role="java developer java oop dsa programming"><div class="role-top"><span class="role-icon icon-blue">☕</span><span class="level">Core programming</span></div><h2>Java Developer</h2><p>Strengthen programming fundamentals and application logic.</p><div class="skill-tags"><span>Java</span><span>OOP</span><span>DSA</span></div><div class="role-bottom"><span>3 core skills</span><a class="btn btn-outline" href="assessment.html?role=Java%20Developer">Assess skills →</a></div></article>
+    </section>
+    <p id="noRoles" class="empty-state" hidden>No roles match your search. Try a different keyword.</p>
+    <footer class="footer">Choose a role that matches your current goal. You can change it later.</footer>
+  </main>
+</body>
+</html>

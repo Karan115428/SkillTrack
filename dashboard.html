@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillTrack | Dashboard</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="dashboard.html"><span class="brand-mark">S</span> SkillTrack</a>
+    <nav class="nav-links"><a class="active" href="dashboard.html">Dashboard</a><a href="roles.html">Explore roles</a><a href="profile.html">My profile</a></nav>
+    <a class="avatar" href="profile.html" aria-label="Open profile">KD</a>
+  </header>
+  <main class="container">
+    <section class="welcome-row">
+      <div><p class="eyebrow">STUDENT DASHBOARD</p><h1>Welcome back, <span id="dashboardName">Learner</span>.</h1><p class="subtext">Small steps today can build your next opportunity.</p></div>
+      <a class="btn btn-primary" href="roles.html">Start an assessment <span>→</span></a>
+    </section>
+    <section class="stat-grid">
+      <article class="stat-card"><span class="stat-icon purple">↗</span><p>Assessments completed</p><h2 id="completedCount">0</h2><span class="stat-caption">Keep building your baseline</span></article>
+      <article class="stat-card"><span class="stat-icon green">◎</span><p>Skills to improve</p><h2 id="skillsCount">3</h2><span class="stat-caption">Based on your selected path</span></article>
+      <article class="stat-card"><span class="stat-icon orange">✦</span><p>Learning streak</p><h2>1 day</h2><span class="stat-caption">Consistency beats intensity</span></article>
+    </section>
+    <section class="content-grid">
+      <article class="panel">
+        <div class="section-heading"><div><p class="eyebrow">YOUR NEXT STEP</p><h2>Continue your journey</h2></div><a class="text-link" href="roles.html">View all roles →</a></div>
+        <div class="journey-card"><div class="journey-symbol">⌘</div><div class="journey-copy"><span class="tag">RECOMMENDED START</span><h3>Find your target developer role</h3><p>Choose a role to see its core skills and take a short practice assessment.</p><a class="text-link" href="roles.html">Explore developer roles →</a></div></div>
+      </article>
+      <article class="panel">
+        <div class="section-heading"><div><p class="eyebrow">HOW IT WORKS</p><h2>Your roadmap</h2></div></div>
+        <ol class="roadmap">
+          <li class="done"><span>1</span><div><strong>Create your profile</strong><p>Tell us what you are working toward.</p></div></li>
+          <li><span>2</span><div><strong>Assess your skills</strong><p>Answer role-based questions.</p></div></li>
+          <li><span>3</span><div><strong>Review recommendations</strong><p>Focus on your skill gaps.</p></div></li>
+        </ol>
+      </article>
+    </section>
+    <footer class="footer">SkillTrack · Student project starter · Front-end demo</footer>
+  </main>
+</body>
+</html>

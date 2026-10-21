@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillTrack | Profile</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">S</span> SkillTrack</a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="roles.html">Explore roles</a><a class="active" href="profile.html">My profile</a></nav><a class="avatar" href="profile.html">KD</a></header>
+  <main class="container narrow-container">
+    <section class="page-heading"><p class="eyebrow">YOUR SPACE</p><h1>Create your learner profile</h1><p class="subtext">Add a few details to personalize this demo experience.</p></section>
+    <form id="profileForm" class="panel profile-form">
+      <div class="profile-banner"><div class="profile-avatar" id="profileInitials">KL</div><div><h2>Learning profile</h2><p class="subtext">Your details are stored only in this browser for this starter version.</p></div></div>
+      <div class="field-grid">
+        <div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" placeholder="e.g. Karan Dimri" required></div>
+        <div class="field"><label for="profileEmail">Email address</label><input id="profileEmail" name="email" type="email" placeholder="you@example.com" required></div>
+        <div class="field full-field"><label for="targetRole">Target role</label><select id="targetRole" name="targetRole"><option>Frontend Developer</option><option>Backend Developer</option><option>Full Stack Developer</option><option>Java Developer</option></select></div>
+        <div class="field full-field"><label for="learningGoal">Main learning goal</label><textarea id="learningGoal" name="learningGoal" rows="4" placeholder="What would you like to improve? (optional)"></textarea></div>
+      </div>
+      <div class="form-actions"><a class="btn btn-outline" href="dashboard.html">Cancel</a><button class="btn btn-primary" type="submit">Save profile</button></div>
+      <p class="form-message" id="profileMessage" aria-live="polite"></p>
+    </form>
+    <footer class="footer">Next development step: connect this profile form to a backend and database.</footer>
+  </main>
+</body>
+</html>
